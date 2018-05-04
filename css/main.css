@@ -1,6 +1,6 @@
 @keyframes fadeToBlack {
   0% {
-    background: transparent; }
+    background: rgba(0, 0, 0, 0); }
   100% {
     background: black; } }
 
@@ -474,7 +474,7 @@ html[lang="en"] [lang="en"] {
     animation: 0.75s steps(3) infinite forwards play-3; }
 
 .outro .outro-overlay {
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   .outro .outro-overlay.animated {
     animation: 5s steps(20) 1 forwards fadeToBlack; }
 

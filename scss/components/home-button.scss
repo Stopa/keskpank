@@ -1,0 +1,10 @@
+.home-button {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px*$ratio;
+    width: 83px*$ratio;
+    height: 84px*$ratio;
+    background: url('../images/home.png') no-repeat;
+    background-size: 13px*6*$ratio 13px*6*$ratio;
+    cursor: pointer;
+}

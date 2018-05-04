@@ -1,0 +1,25 @@
+.lang-button {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 8px*$ratio;
+    cursor: pointer;
+    background: transparent no-repeat;
+    height: 60px*$ratio;
+    width: 83px*$ratio;
+    font-size: 0;
+    background-size: 83px*$ratio auto;
+
+    &.eng {
+        background-image: url('../images/eng.png');
+    }
+
+    &.est {
+        background-image: url('../images/est.png');
+    }
+
+    &.rus {
+        width: 81px*$ratio;
+        background-image: url('../images/rus.png');
+        background-size: 81px*$ratio;
+    }
+}

@@ -1,0 +1,47 @@
+.game-over-overlay {
+    background: url('../images/gameover.png');
+    background-size: 320px*6*$ratio 180px*6*$ratio;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    .content {
+        font-size: 46px*$ratio;
+        position: absolute;
+        color: #2d6cb6;
+        width: 925px*$ratio;
+        height: 310px*$ratio;
+        left: 508px*$ratio;
+        top: 424px*$ratio;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game-over-retry {
+        font: inherit;
+        border: none;
+        background: url('../images/retry.png');
+        background-size: 98px*6*$ratio 37px*6*$ratio;
+        cursor: pointer;
+        font-size: 60px*$ratio;
+        color: #2d6cb6;
+        width: 588px*$ratio;
+        height: 222px*$ratio;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 660px*$ratio;
+        top: 743px*$ratio;
+    }
+
+    &.visible {
+        display: block;
+    }
+}

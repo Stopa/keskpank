@@ -1,0 +1,13 @@
+.road {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../images/road.png') no-repeat 0 0;
+    background-size: 960px*6*$ratio 180px*6*$ratio;
+    
+    &.animated {
+        animation: play-3 3*$spf steps(3) infinite;
+    }
+}

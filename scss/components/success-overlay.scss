@@ -1,0 +1,28 @@
+.success-overlay {
+    background: url('../images/success.png');
+    background-size: 320px*6*$ratio 180px*6*$ratio;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    .content {
+        font-size: 36px*$ratio;
+        color: #2d6cb6;
+        position: absolute;
+        width: 722px*$ratio;
+        height: 445px*$ratio;
+        left: 618px*$ratio;
+        top: 342px*$ratio;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.visible {
+        display: block;
+    }
+}

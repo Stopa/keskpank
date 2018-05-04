@@ -1,0 +1,7 @@
+$vel: 120px/2;
+$viewport_w: $vel * 16;
+$viewport_h: $vel * 9;
+
+$ratio: 120/2*16/1920;
+
+$spf: 0.25s; // seconds per frame

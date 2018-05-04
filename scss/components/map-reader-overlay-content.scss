@@ -1,0 +1,13 @@
+.map-reader-overlay-content {
+    font-size: 38px*$ratio;
+    width: 917px*$ratio;
+    height: 312px*$ratio;
+    margin-top: 30px*$ratio;
+    margin-left: 530px*$ratio;
+    display: flex;
+    align-items: center;
+
+    .long-text & {
+        height: 662px*$ratio;
+    }
+}

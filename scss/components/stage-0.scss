@@ -1,0 +1,171 @@
+.stage-0 {
+    > .intro {
+        background-image: url('../images/stage-0/intro.png');
+        background-size: 4160px*6*$ratio 180px*6*$ratio;
+        animation: 13*$spf steps(13) 1 forwards paused play-13;
+
+        &.animated {
+            animation-play-state: running;
+        }
+
+        &.ended {
+            animation: none;
+            background: url('../images/stage-0/background.png') no-repeat left top;
+            background-size: $viewport_w $viewport_h;
+        }
+    }
+    > .loop {
+        background-image: url('../images/stage-0/loop.png');
+        background-size: 2560px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 8*$spf steps(8) infinite play-8;
+        }
+
+        .text-1 {
+            color: #ff0000;
+            font-size: 24px*$ratio;
+            text-align: center;
+            position: absolute;
+            left: 1580px*$ratio;
+            top: 590px*$ratio;
+            width: 150px*$ratio;
+        }
+
+        .text-2 {
+            color: #0f620f;
+            font-size: 18px*$ratio;
+            position: absolute;
+            left: 1355px*$ratio;
+            top: 594px*$ratio;
+            text-align: center;
+        }
+
+        .text-3 {
+            color: #d337ca;
+            font-size: 40px*$ratio;
+            position: absolute;
+            text-align: center;
+            left: 70px*$ratio;
+            top: 450px*$ratio;
+            width: 380px*$ratio;
+        }
+
+        .text-4 {
+            color: #fffc00;
+            font-size: 44px*$ratio;
+            position: absolute;
+            left: 90px*$ratio;
+            top: 580px*$ratio;
+            width: 340px*$ratio;
+            text-align: center;
+        }
+    }
+    > .accelerate {
+        > .intro {
+            background-image: url('../images/stage-0/accelerate-intro.png');
+            background-size: 2880px*6*$ratio 180px*6*$ratio;
+            animation: 5*$spf steps(5) 1 forwards paused play-5;
+
+            &.animated {
+                animation-play-state: running;
+            }
+
+            &.ended {
+                animation: none;
+                background-position: right top;
+            }
+        }
+        > .loop {
+            background-image: url('../images/stage-0/accelerate-loop.png');
+            background-size: 1920px*6*$ratio 180px*6*$ratio;
+
+            &.animated {
+                animation: 6*$spf steps(6) infinite play-6;
+            }
+
+            .text-1 {
+                font-size: 36px*$ratio;
+                color: #3c3b09;
+                position: absolute;
+                left: 1410px*$ratio;
+                top: 660px*$ratio;
+            }
+        }
+    }
+    > .ignore {
+        background-image: url('../images/stage-0/ignore.png');
+        background-size: 19200px*$ratio 4320px*$ratio;
+        animation: 40*$spf steps(4) 1 forwards paused playv-4, 10*$spf steps(10) 4 forwards paused play-10;
+
+        &.animated {
+            animation-play-state: running;
+        }
+
+        &.ended {
+            animation: none;
+            background-position: right bottom;
+        }
+    }
+    > .decelerate {
+        background: url('../images/stage-0/background.png') no-repeat left top;
+        background-size: $viewport_w $viewport_h;
+
+        .text-1 {
+            color: #ff0000;
+            font-size: 24px*$ratio;
+            text-align: center;
+            position: absolute;
+            left: 1580px*$ratio;
+            top: 590px*$ratio;
+            width: 150px*$ratio;
+        }
+
+        .text-2 {
+            color: #0f620f;
+            font-size: 18px*$ratio;
+            position: absolute;
+            left: 1355px*$ratio;
+            top: 594px*$ratio;
+            text-align: center;
+        }
+
+        .text-3 {
+            color: #d337ca;
+            font-size: 40px*$ratio;
+            position: absolute;
+            text-align: center;
+            left: 70px*$ratio;
+            top: 450px*$ratio;
+            width: 380px*$ratio;
+        }
+
+        .text-4 {
+            color: #fffc00;
+            font-size: 44px*$ratio;
+            position: absolute;
+            left: 90px*$ratio;
+            top: 580px*$ratio;
+            width: 340px*$ratio;
+            text-align: center;
+        }
+
+        > .intro {
+            background-image: url('../images/stage-0/decelerate-intro.png');
+            background-size: 19200px*$ratio 2160px*$ratio;
+            animation: 20*$spf steps(2) 1 forwards paused playv-2, 10*$spf steps(10) 2 forwards paused play-10;
+
+            &.animated {
+                animation-play-state: running;
+            }
+        }
+        > .loop {
+            background: url('../images/stage-0/decelerate-loop.png');
+            background-size: 11520px*$ratio 1080px*$ratio;
+
+            &.animated {
+                animation: 6*$spf steps(6) infinite play-6;
+            }
+        }
+    }
+}

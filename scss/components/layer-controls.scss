@@ -1,0 +1,89 @@
+.layer-controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 402px*$ratio;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 7*$spf steps(7);
+    background: url('../images/dashboard.png');
+    background-size: 320px*6*$ratio 67px*6*$ratio;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 24px*$ratio;
+    box-sizing: border-box;
+
+    .control {
+        display: flex;
+        margin-top: 18px*$ratio;
+        margin-right: 240px*$ratio;
+
+        &:last-child {
+            margin-top: 24px*$ratio;
+        }
+    }
+
+    button {
+        font: inherit;
+        width: 518px*$ratio;
+        height: 102px*$ratio;
+        box-sizing: border-box;
+        padding: 10px*$ratio 15px*$ratio 10px*$ratio 177px*$ratio;
+        font-size: 20px*$ratio;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: no-repeat;
+        border: none;
+        cursor: pointer;
+
+        &.button-accelerate {
+            background-image: url('../images/accelerate-button.png');
+            background-size: 19px*6*$ratio 14px*6*$ratio;
+            background-position: 14px*$ratio 6px*$ratio;
+
+            &:hover {
+                background-position: 14px*$ratio 1px*$ratio;
+            }
+
+            &:active {
+                background-position: 14px*$ratio 11px*$ratio;
+            }
+        }
+
+        &.button-ignore {
+            background-image: url('../images/ignore-button.png');
+            background-size: 9px*6*$ratio 10px*6*$ratio;
+            background-position: 44px*$ratio 24px*$ratio;
+
+            &:hover {
+                background-position: 44px*$ratio 19px*$ratio;
+            }
+
+            &:active {
+                background-position: 44px*$ratio 29px*$ratio;
+            }
+        }
+
+        &.button-decelerate {
+            background-image: url('../images/decelerate-button.png');
+            background-size: 17px*6*$ratio 14px*6*$ratio;
+            background-position: 20px*$ratio 6px*$ratio;
+
+            &:hover {
+                background-position: 20px*$ratio 1px*$ratio;
+            }
+
+            &:active {
+                background-position: 20px*$ratio 11px*$ratio;
+            }
+        }
+    }
+
+    &.visible {
+        transform: translate3d(0, 0, 0);
+    }
+}

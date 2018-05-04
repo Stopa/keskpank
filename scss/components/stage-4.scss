@@ -1,0 +1,154 @@
+.stage-4 {
+    > .intro {
+        background-image: url('../images/stage-4/intro.png');
+        background-size: 3840px*6*$ratio 720px*6*$ratio;
+
+        &.animated {
+            animation: 12*$spf steps(12) 4 play-12, 4*12*$spf steps(4) 1 playv-4;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    > .loop {
+        animation: 1s infinite empty;
+
+        .text-1 {
+            font-size: 40px*$ratio;
+            color: #f73122;
+            position: absolute;
+            text-align: center;
+            left: 50px*$ratio;
+            top: 370px*$ratio;
+            width: 290px*$ratio;
+
+            &[lang="en"] {
+                font-size: 30px*$ratio;
+            }
+
+            &[lang="ru"] {
+                font-size: 25px*$ratio;
+            }
+        }
+
+        .text-2 {
+            font-size: 58px*$ratio;
+            color: #f73122;
+            position: absolute;
+            width: 290px*$ratio;
+            left: 50px*$ratio;
+            text-align: center;
+            top: 570px*$ratio;
+        }
+
+        .text-3 {
+            font-size: 25px*$ratio;
+            color: #00916d;
+            position: absolute;
+            text-align: center;
+            width: 180px*$ratio;
+            left: 390px*$ratio;
+            top: 240px*$ratio;
+
+            &[lang="en"] {
+                font-size: 20px*$ratio;
+            }
+
+            &[lang="ru"] {
+                font-size: 17px*$ratio;
+            }
+        }
+
+        .text-4 {
+            font-size: 58px*$ratio;
+            color: #367786;
+            position: absolute;
+            text-align: center;
+            width: 180px*$ratio;
+            left: 390px*$ratio;
+            top: 390px*$ratio;
+        }
+
+        .text-5 {
+            font-size: 30px*$ratio;
+            color: #191212;
+            position: absolute;
+            text-align: center;
+            width: 220px*$ratio;
+            top: 160px*$ratio;
+            left: 587px*$ratio;
+            
+            &[lang="en"] {
+                font-size: 25px*$ratio;
+            }
+
+            &[lang="ru"] {
+                font-size: 20px*$ratio;
+            }
+        }
+
+        .text-6 {
+            font-size: 70px*$ratio;
+            color: white;
+            position: absolute;
+            text-align: center;
+            width: 220px*$ratio;
+            left: 587px*$ratio;
+            top: 260px*$ratio;
+        }
+    }
+
+    .accelerate {
+        background-image: url('../images/stage-4/accelerate.png');
+        background-size: 4480px*6*$ratio 360px*6*$ratio;
+
+        &.animated {
+            animation: 14*$spf steps(14) 2 forwards play-14, 2*14*$spf steps(2) 1 forwards playv-2;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    .ignore {
+        background-image: url('../images/stage-4/ignore.png');
+        background-size: 1920px*6*$ratio 180px*6*$ratio;
+        z-index: 1000;
+
+        &.animated {
+            animation: 6*$spf steps(6) 1 forwards play-6;
+        }
+
+        &.visible.ended {
+            display: none;
+        }
+    }
+
+    .decelerate {
+        .intro {
+            background-image: url('../images/stage-4/decelerate-intro.png');
+            background-size: 3840px*6*$ratio 540px*6*$ratio;
+            
+            &.animated {
+                animation: 12*$spf steps(12) 3 forwards play-12, 3*12*$spf steps(3) 1 forwards playv-3;
+            }
+    
+            &.ended {
+                background-image: url('../images/stage-4/decelerate-background.png');
+                background-size: $viewport_w $viewport_h;
+            }
+        }
+        
+        .loop {
+            background-image: url('../images/stage-4/decelerate-loop.png');
+            background-size: 11520px*$ratio 1080px*$ratio;
+
+            &.animated {
+                animation: 6*$spf steps(6) infinite forwards play-6;
+            }
+        }
+    }
+}

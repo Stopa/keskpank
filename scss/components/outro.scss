@@ -1,0 +1,105 @@
+.outro {
+    > * {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: no-repeat left top;
+        display: none;
+    }
+
+    > .visible {
+        display: block;
+    }
+
+    .exitcar {
+        background-image: url('../images/outro/1-exitcar.png');
+        background-size: 2880px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 9*$spf steps(9) 1 forwards play-9;
+        }
+
+        &.ended {
+            animation: none;
+            background-position: right bottom;
+        }
+    }
+
+    .startdriving {
+        background-image: url('../images/outro/2-startdriving.png');
+        background-size: 2560px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 8*$spf steps(8) 1 forwards play-8;
+        }
+
+        &.ended {
+            display: none;
+        }
+    }
+
+    .darker {
+        background-image: url('../images/outro/3-b-background-darker.png');
+        background-size: 2880px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 9*$spf steps(9) 1 forwards play-9;
+        }
+
+        &.ended {
+            animation: none;
+            background-position: right bottom;
+        }
+    }
+
+    .car-darker {
+        background-image: url('../images/outro/3-a-cardarker.png');
+        background-size: 19200px*$ratio 1080px*$ratio;
+
+        &.animated {
+            animation: 9*$spf steps(9) 1 forwards play-9;
+        }
+
+        &.ended {
+            background-image: url('../images/outro/3-loop-a-carloop.png');
+            animation: 10*$spf steps(10) infinite forwards play-10;
+        }
+    }
+
+    .animal {
+        background-image: url('../images/outro/4-animal.png');
+        background-size: 2560px*6*$ratio 360px*6*$ratio;
+
+        &.animated {
+            animation: 8*$spf steps(8) 2 forwards play-8, 2*8*$spf steps(2) 1 forwards playv-2;
+        }
+    }
+
+    .voices {
+        background-image: url('../images/outro/5-voices.png');
+        background-size: 4480px*6*$ratio 360px*6*$ratio;
+        
+        &.animated {
+            animation: 14*$spf steps(14) 1 forwards play-14;
+        }
+    }
+
+    .rain {
+        background-image: url('../images/outro/3-loop-b-rain.png');
+        background-size: 960px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 3*$spf steps(3) infinite forwards play-3;
+        }
+    }
+
+    .outro-overlay {
+        background-color: rgba(0, 0, 0, 0);
+
+        &.animated {
+            animation: 20*$spf steps(20) 1 forwards fadeToBlack;
+        }
+    }
+}

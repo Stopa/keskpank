@@ -1,0 +1,20 @@
+.exhaust {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../images/exhaust.png');
+    background-size: 2240px*6*$ratio 180px*6*$ratio;
+    animation: 7*$spf steps(7) infinite forwards paused play-7;
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+
+    &.animated {
+        animation-play-state: running;
+        //animation: play-7 3.5s steps(7) infinite;
+    }
+}

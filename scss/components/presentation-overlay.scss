@@ -1,0 +1,24 @@
+.presentation-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    font: inherit;
+    font-size: 24px*$ratio;
+    line-height: 1.5;
+    color: #444444;
+    background: url('../images/presentation/overlay.png') no-repeat center;
+    background-size: 267px*6*$ratio 157px*6*$ratio;
+    box-sizing: border-box;
+    padding: 110px*$ratio 210px*$ratio;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    &.visible {
+        display: flex;
+    }
+}

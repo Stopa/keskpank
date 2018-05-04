@@ -1,0 +1,15 @@
+body [lang] {
+    display: none;
+}
+
+html[lang="et"] [lang="et"] {
+    display: initial;
+}
+
+html[lang="ru"] [lang="ru"] {
+    display: initial;
+}
+
+html[lang="en"] [lang="en"] {
+    display: initial;
+}

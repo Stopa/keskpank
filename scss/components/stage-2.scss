@@ -1,0 +1,105 @@
+.stage-2 {
+    > .intro {
+        background-image: url('../images/stage-2/intro.png');
+        background-size: 4480px*6*$ratio 720px*6*$ratio;
+
+        &.animated {
+            animation: 14*$spf steps(14) 4 forwards play-14, 56*$spf steps(4) 1 forwards playv-4;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    > .loop {
+        animation: 2s infinite empty;
+
+        .text-1 {
+            color: #d1e600;
+            font-size: 40px*$ratio;
+            position: absolute;
+            width: 300px*$ratio;
+            left: 60px*$ratio;
+            top: 60px*$ratio;
+        }
+
+        .text-2 {
+            color: #0032ee;
+            font-size: 50px*$ratio;
+            position: absolute;
+            left: 40px*$ratio;
+            top: 530px*$ratio;
+            width: 220px*$ratio;
+            
+            &[lang="en"],
+            &[lang="ru"] {
+                top: 550px*$ratio;
+                font-size: 30px*$ratio;
+            }
+        }
+
+        .text-3 {
+            color: #0032ee;
+            font-size: 50px*$ratio;
+            position: absolute;
+            width: 220px*$ratio;
+            left: 1510px*$ratio;
+            top: 320px*$ratio;
+            
+            &[lang="en"],
+            &[lang="ru"] {
+                top: 350px*$ratio;
+                font-size: 30px*$ratio;
+            }
+        }
+
+        .text-4 {
+            color: #e1047e;
+            font-size: 40px*$ratio;
+            position: absolute;
+            width: 410px*$ratio;
+            top: 440px*$ratio;
+            left: 1330px*$ratio;
+        }
+    }
+
+    > .accelerate {
+        background-image: url('../images/stage-2/accelerate.png');
+        background-size: 19200px*$ratio 7560px*$ratio;
+
+        &.animated {
+            animation: 10*$spf steps(10) 7 forwards play-10, 70*$spf steps(7) 1 forwards playv-7;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    > .ignore {
+        background-image: url('../images/stage-2/ignore.png');
+        background-size: 3840px*6*$ratio 540px*6*$ratio;
+
+        &.animated {
+            animation: 12*$spf steps(12) 3 forwards play-12, 36*$spf steps(3) forwards playv-3;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    > .decelerate {
+        background-image: url('../images/stage-2/decelerate.png');
+        background-size: 2560px*6*$ratio 720px*6*$ratio;
+
+        &.animated {
+            animation: 8*$spf steps(8) 4 forwards play-8, 32*$spf steps(4) forwards playv-4;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+}

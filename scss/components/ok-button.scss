@@ -1,0 +1,19 @@
+.ok-button {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 -156px*$ratio;
+    font-size: 0;
+    cursor: pointer;
+    height: 318px*$ratio;
+    width: 312px*$ratio;
+    background: url('../images/overlay-ok.png');
+    background-size: 52px*6*$ratio 53px*6*$ratio;
+    position: absolute;
+    left: 50%;
+    top: 714px*$ratio;
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}

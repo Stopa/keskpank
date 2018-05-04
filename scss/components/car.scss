@@ -1,0 +1,9 @@
+.car {
+    width: 462px*$ratio;
+    height: 282px*$ratio;
+    position: absolute;
+    left: 756px*$ratio;
+    top: 714px*$ratio;
+    background: url('../images/car.png');
+    background-size: 462px*$ratio 282px*$ratio;
+}

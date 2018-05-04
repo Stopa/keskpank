@@ -1,0 +1,114 @@
+.stage-3 {
+    > .intro {
+        background-image: url('../images/stage-3/intro.png');
+        background-size: 4480px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 14*$spf steps(14) 1 forwards play-14;
+        }
+
+        &.ended {
+            background-image: url('../images/stage-3/background.png');
+            background-size: 320px*6*$ratio 180px*6*$ratio;
+        }
+    }
+
+    > .loop {
+        background-image: url('../images/stage-3/loop.png');
+        background-size: 1280px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 4*$spf steps(4) infinite play-4;
+        }
+
+        .text-1 {
+            color: #362038;
+            font-size: 50px*$ratio;
+            text-align: center;
+            position: absolute;
+            width: 600px*$ratio;
+            left: 130px*$ratio;
+            top: 270px*$ratio;
+        }
+
+        .text-2 {
+            color: #fa1100;
+            font-size: 60px*$ratio;
+            text-align: center;
+            position: absolute;
+            width: 430px*$ratio;
+            left: 1330px*$ratio;
+            top: 220px*$ratio;
+
+            &[lang="en"],
+            &[lang="ru"] {
+                top: 300px*$ratio;
+            }
+
+            &[lang="ru"] {
+                font-size: 50px*$ratio;
+            }
+        }
+    }
+
+    > .accelerate {
+        .intro {
+            background-image: url('../images/stage-3/accelerate-intro.png');
+            background-size: 28800px*$ratio 2160px*$ratio;
+
+            &.animated {
+                animation: 15*$spf steps(15) 2 forwards play-15, 30*$spf steps(2) 1 forwards playv-2;
+            }
+
+            &.ended {
+                background-image: none;
+            }
+        }
+
+        .loop {
+            background-image: url('../images/stage-3/accelerate-loop.png');
+            background-size: 11520px*$ratio 1080px*$ratio;
+
+            &.animated {
+                animation: 6*$spf steps(6) infinite forwards play-6;
+            }
+        }
+    }
+
+    > .ignore {
+        background-image: url('../images/stage-3/ignore.png');
+        background-size: 3200px*6*$ratio 180px*6*$ratio;
+
+        &.animated {
+            animation: 10*$spf steps(10) 1 forwards play-10;
+        }
+
+        &.ended {
+            background-position: right bottom;
+        }
+    }
+
+    > .decelerate {
+        .intro {
+            background-image: url('../images/stage-3/decelerate-intro.png');
+            background-size: 3840px*6*$ratio 540px*6*$ratio;
+
+            &.animated {
+                animation: 12*$spf steps(12) 3 forwards play-12, 36*$spf steps(3) 1 forwards playv-3;
+            }
+
+            &.ended {
+                background: none;
+            }
+        }
+
+        .loop {
+            background: url('../images/stage-3/decelerate-loop.png');
+            background-size: 640px*6*$ratio 180px*6*$ratio;
+
+            &.animated {
+                animation: 2*$spf steps(2) infinite forwards play-2;
+            }
+        }
+    }
+}

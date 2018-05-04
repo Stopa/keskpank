@@ -1,0 +1,109 @@
+.presentation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    background: url('../images/presentation/background.png');
+    background-size: $viewport_w $viewport_h;
+
+    &.visible {
+        display: block;
+    }
+
+    button {
+        position: absolute;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        font-size: 20px*$ratio;
+        color: #182654;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+        }
+
+        &.tulip-mania {
+            background: url('../images/presentation/tulips-btn.png') no-repeat right bottom;
+            background-size: 42px*6*$ratio 9px*6*$ratio;
+            left: 250px*$ratio;
+            top: 150px*$ratio;
+            width: 430px*$ratio;
+            height: 310px*$ratio;
+
+            span {
+                right: 14px*$ratio;
+                bottom: 18px*$ratio;
+            }
+        }
+        
+        &.germany {
+            background: url('../images/presentation/germany-btn.png') no-repeat right top;
+            background-size: 50px*6*$ratio 9px*6*$ratio;
+            left: 820px*$ratio;
+            top: 250px*$ratio;
+            width: 460px*$ratio;
+            height: 260px*$ratio;
+
+            span {
+                top: 17px*$ratio;
+                right: 20px*$ratio;
+                width: 260px*$ratio;
+            }
+        }
+
+        &.northlands {
+            background: url('../images/presentation/northlands-btn.png') no-repeat left top;
+            background-size: 52px*6*$ratio 9px*6*$ratio;
+            top: 450px*$ratio;
+            left: 1260px*$ratio;
+            width: 450px*$ratio;
+            height: 280px*$ratio;
+
+            span {
+                left: 20px*$ratio;
+                top: 13px*$ratio;
+            }
+        }
+
+        &.mexico {
+            background: url('../images/presentation/mexico-btn.png') no-repeat right top;
+            background-size: 43px*6*$ratio 8px*6*$ratio;
+            top: 650px*$ratio;
+            left: 140px*$ratio;
+            width: 470px*$ratio;
+            height: 270px*$ratio;
+
+            span {
+                top: 11px*$ratio;
+                right: 10px*$ratio;
+            }
+        }
+
+        &.estonia {
+            background: url('../images/presentation/estonia-btn.png') no-repeat right top;
+            background-size: 57px*6*$ratio 14px*6*$ratio;
+            left: 750px*$ratio;
+            top: 660px*$ratio;
+            width: 510px*$ratio;
+            height: 360px*$ratio;
+
+            span {
+                right: 0;
+                top: 17px*$ratio;
+                width: 340px*$ratio;
+            }
+        }
+
+        &.start-game {
+            background: url('../images/presentation/start-game-btn.png') no-repeat;
+            background-size: 531px*$ratio 332px*$ratio;
+            height: 332px*$ratio;
+            width: 531px*$ratio;
+            left: 1330px*$ratio;
+            top: 720px*$ratio;
+            animation: 4s infinite bounce;
+        }
+    }
+}

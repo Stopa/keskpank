@@ -23,7 +23,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "node-sass-globbing": "0.0.23"
   }
 }
